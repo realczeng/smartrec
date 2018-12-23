@@ -1,0 +1,29 @@
+<template name="ef03faa2">
+  <view class="_div data-v-62561ce1">
+    <view class="_div data-v-62561ce1">
+      <wux-white-space body-style="height: 50rpx" class="_wux-white-space data-v-62561ce1"></wux-white-space>
+      <wux-wing-blank size="large" wx:key="item.id" key="{{item.id}}" wx:for="{{recData}}" wx:for-index="index" wx:for-item="item" class="_wux-wing-blank data-v-62561ce1">
+        <wux-card title="{{item.time}}" extra="{{item.day}}" bordered="false" slot="content" class="_wux-card data-v-62561ce1">
+          <view slot="body" class="_p data-v-62561ce1">{{item.text}}</view>
+          <wux-icon type="{{item.weather}}" slot="footer" class="_wux-icon data-v-62561ce1"></wux-icon>
+        </wux-card>
+        <wux-white-space body-style="height: 50rpx" class="_wux-white-space data-v-62561ce1"></wux-white-space>
+      </wux-wing-blank>
+      <wux-white-space body-style="height: 80rpx" class="_wux-white-space data-v-62561ce1"></wux-white-space>
+    </view>
+    <wux-tabbar controlled current="{{tabIndex}}" position="bottom" theme="positive" class="_wux-tabbar data-v-62561ce1">
+      <wux-tabbar-item bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-tabbar-item data-v-62561ce1">
+        <wux-icon wux-class="icon" type="md-list-box" size="25" slot="icon-on" class="_wux-icon data-v-62561ce1"></wux-icon>
+        <wux-icon wux-class="icon" type="md-list-box" size="28" slot="icon-off" class="_wux-icon data-v-62561ce1"></wux-icon>
+      </wux-tabbar-item>
+      <wux-tabbar-item bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_wux-tabbar-item data-v-62561ce1">
+        <wux-icon wux-class="icon" type="md-bowtie" size="25" slot="icon-on" class="_wux-icon data-v-62561ce1"></wux-icon>
+        <wux-icon wux-class="icon" type="md-bowtie" size="28" slot="icon-off" class="_wux-icon data-v-62561ce1"></wux-icon>
+      </wux-tabbar-item>
+      <wux-tabbar-item bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_wux-tabbar-item data-v-62561ce1">
+        <wux-icon wux-class="icon" type="md-person" size="25" slot="icon-on" class="_wux-icon data-v-62561ce1"></wux-icon>
+        <wux-icon wux-class="icon" type="md-person" size="28" slot="icon-off" class="_wux-icon data-v-62561ce1"></wux-icon>
+      </wux-tabbar-item>
+    </wux-tabbar>
+  </view>
+</template>

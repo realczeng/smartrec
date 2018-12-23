@@ -1,0 +1,4 @@
+build/*.js
+config/*.js
+src/fly.js
+src/wx.js

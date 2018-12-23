@@ -1,0 +1,58 @@
+<template name="2f4d1e3d">
+  <view class="_div data-v-687a5876">
+    <wux-wing-blank size="large" class="_wux-wing-blank data-v-687a5876">
+      <wux-white-space body-style="height: 20px" class="_wux-white-space data-v-687a5876"></wux-white-space>
+      <wux-row class="_wux-row data-v-687a5876 headerInfo">
+        <wux-col span="4" class="_wux-col data-v-687a5876">{{dayH1}}</wux-col>
+        <wux-col span="4" class="_wux-col data-v-687a5876">
+          <wux-icon type="{{weatherIcon}}" size="30" class="_wux-icon data-v-687a5876"></wux-icon>
+        </wux-col>
+        <wux-col span="4" class="_wux-col data-v-687a5876">{{timer}}</wux-col>
+      </wux-row>
+    </wux-wing-blank>
+    <wux-white-space body-style="height: 20px" class="_wux-white-space data-v-687a5876"></wux-white-space>
+    <view style="width: 100%" class="_div data-v-687a5876">
+      <wux-wing-blank size="large" class="_wux-wing-blank data-v-687a5876">
+        <wux-card title="语音识别" extra="{{recoState}}" bordered class="_wux-card data-v-687a5876">
+          <scroll-view scroll-with-animation enable-back-to-top class="_scroll-view data-v-687a5876 recoText" scroll-y slot="body">{{recoText}}</scroll-view>
+        </wux-card>
+      </wux-wing-blank>
+    </view>
+    <wux-row class="_wux-row data-v-687a5876">
+      <wux-col span="4" class="_wux-col data-v-687a5876">
+        <wux-wing-blank size="large" class="_wux-wing-blank data-v-687a5876">
+          <wux-button block type="{{langButtonType}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-button data-v-687a5876">{{lang}}</wux-button>
+        </wux-wing-blank>
+      </wux-col>
+      <wux-col span="4" class="_wux-col data-v-687a5876">
+        <wux-wing-blank size="large" class="_wux-wing-blank data-v-687a5876">
+          <wux-button block class="_wux-button data-v-687a5876">
+            <wux-icon type="md-brush" size="22" class="_wux-icon data-v-687a5876"></wux-icon>
+          </wux-button>
+        </wux-wing-blank>
+      </wux-col>
+      <wux-col span="4" class="_wux-col data-v-687a5876">
+        <wux-wing-blank size="large" class="_wux-wing-blank data-v-687a5876">
+          <wux-button block bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_wux-button data-v-687a5876">
+            <wux-icon type="md-save" size="22" class="_wux-icon data-v-687a5876"></wux-icon>
+          </wux-button>
+        </wux-wing-blank>
+      </wux-col>
+    </wux-row>
+    <i-button type="{{micButtonColor}}" shape="circle" size="large" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_i-button data-v-687a5876">           <wux-icon type="md-mic" size="45" class="_wux-icon data-v-687a5876"></wux-icon>           </i-button>
+    <wux-tabbar controlled current="{{tabIndex}}" position="bottom" theme="positive" class="_wux-tabbar data-v-687a5876">
+      <wux-tabbar-item bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_wux-tabbar-item data-v-687a5876">
+        <wux-icon wux-class="icon" type="md-list-box" size="25" slot="icon-on" class="_wux-icon data-v-687a5876"></wux-icon>
+        <wux-icon wux-class="icon" type="md-list-box" size="28" slot="icon-off" class="_wux-icon data-v-687a5876"></wux-icon>
+      </wux-tabbar-item>
+      <wux-tabbar-item bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_wux-tabbar-item data-v-687a5876">
+        <wux-icon wux-class="icon" type="md-bowtie" size="25" slot="icon-on" class="_wux-icon data-v-687a5876"></wux-icon>
+        <wux-icon wux-class="icon" type="md-bowtie" size="28" slot="icon-off" class="_wux-icon data-v-687a5876"></wux-icon>
+      </wux-tabbar-item>
+      <wux-tabbar-item bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_wux-tabbar-item data-v-687a5876">
+        <wux-icon wux-class="icon" type="md-person" size="25" slot="icon-on" class="_wux-icon data-v-687a5876"></wux-icon>
+        <wux-icon wux-class="icon" type="md-person" size="28" slot="icon-off" class="_wux-icon data-v-687a5876"></wux-icon>
+      </wux-tabbar-item>
+    </wux-tabbar>
+  </view>
+</template>

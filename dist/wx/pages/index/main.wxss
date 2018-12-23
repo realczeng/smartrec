@@ -1,0 +1,38 @@
+@import "../../common/vendor.wxss";
+
+.headerInfo.data-v-687a5876 {
+  text-align: center;
+  font-size: 20pt;
+}
+.userinfo.data-v-687a5876 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blockBox.data-v-687a5876 {
+  display: block;
+  width: 100%;
+}
+.userinfo-avatar.data-v-687a5876 {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname.data-v-687a5876 {
+  color: #aaa;
+}
+.usermotto.data-v-687a5876 {
+  margin-top: 300rpx;
+}
+.form-control.data-v-687a5876 {
+  display: block;
+  padding: 0 24rpx;
+  margin-bottom: 10rpx;
+  border: 2rpx solid #ccc;
+}
+.recoText.data-v-687a5876 {
+  font-size: 14pt;
+  height: 500rpx;
+  text-align: justify;
+}

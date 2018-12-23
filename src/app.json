@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/logs/main",
+    "pages/myhome/main",
+    "pages/list/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "SmartREC",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.2.2",
+      "provider": "wx069ba97219f66d99"
+    }
+  }
+}
