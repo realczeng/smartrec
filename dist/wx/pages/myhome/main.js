@@ -182,7 +182,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticStyle: {
       "font-size": "1.4em"
     }
-  }, [_vm._v("SmartREC")]), _vm._v(" "), _c('h2', [_vm._v("v1.0.1")]), _vm._v(" "), _c('wux-white-space', {
+  }, [_vm._v("SmartREC")]), _vm._v(" "), _c('h2', [_vm._v("v1.0.2")]), _vm._v(" "), _c('wux-white-space', {
     attrs: {
       "body-style": "height: 70px",
       "mpcomid": '1'
@@ -205,7 +205,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "color": "grey",
       "font-size": "0.8em"
     }
-  }, [_vm._v("Source code licensed under GPL v3.")]), _vm._v(" "), _c('p', {
+  }, [_vm._v("Source code is licensed under LGPL v3.")]), _vm._v(" "), _c('p', {
     staticStyle: {
       "color": "grey",
       "font-size": "0.8em"
