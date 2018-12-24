@@ -2,12 +2,12 @@
   <view class="_div data-v-7aef6a8e container">
     <wux-icon wux-class="icon" type="md-microphone" size="80" class="_wux-icon data-v-7aef6a8e"></wux-icon>
     <view style="font-size: 1.4em" class="_h1 data-v-7aef6a8e">SmartREC</view>
-    <view class="_h2 data-v-7aef6a8e">v1.0.0</view>
+    <view class="_h2 data-v-7aef6a8e">v1.0.1</view>
     <wux-white-space body-style="height: 70px" class="_wux-white-space data-v-7aef6a8e"></wux-white-space>
     <view style="font-size: 1em" class="_p data-v-7aef6a8e">亲爱的 {{userInfo.nickName}}</view>
-    <view style="font-size: 1em" class="_p data-v-7aef6a8e">您已经使用SmartREC进行了{{recCount}}次录音</view>
+    <view style="font-size: 1em" class="_p data-v-7aef6a8e">您已经使用SmartREC进行了{{recData.length}}次录音</view>
     <wux-white-space body-style="height: 70px" class="_wux-white-space data-v-7aef6a8e"></wux-white-space>
-    <view style="color: grey; font-size: 0.8em" class="_p data-v-7aef6a8e">Source code licensed GPL v3.</view>
+    <view style="color: grey; font-size: 0.8em" class="_p data-v-7aef6a8e">Source code licensed under GPL v3.</view>
     <view style="color: grey; font-size: 0.8em" class="_p data-v-7aef6a8e">© 2018 ZENG Chen.</view>
     <wux-tabbar controlled current="{{tabIndex}}" position="bottom" theme="positive" class="_wux-tabbar data-v-7aef6a8e">
       <wux-tabbar-item bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_wux-tabbar-item data-v-7aef6a8e">

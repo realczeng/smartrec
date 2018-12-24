@@ -153,30 +153,12 @@ if (false) {(function () {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
 
 var plugin = requirePlugin('WechatSI');
 var manager = plugin.getRecordRecognitionManager();
-// const wxrec = wx.getRecorderManager()
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {

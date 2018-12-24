@@ -2,15 +2,12 @@
   <div class="container">
     <wux-icon wux-class="icon" type="md-microphone" size="80" />
     <h1 style="font-size: 1.4em">SmartREC</h1>
-    <h2>v1.0.0</h2>
+    <h2>v1.0.1</h2>
     <wux-white-space body-style="height: 70px" />
     <p style="font-size: 1em">亲爱的 {{userInfo.nickName}}</p>
-    <p style="font-size: 1em">您已经使用SmartREC进行了{{recCount}}次录音</p>
-    <!-- <div class="userinfo">
-      <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-    </div> -->
+    <p style="font-size: 1em">您已经使用SmartREC进行了{{recData.length}}次录音</p>
     <wux-white-space body-style="height: 70px" />
-    <p style="color: grey; font-size: 0.8em">Source code licensed GPL v3.</p>
+    <p style="color: grey; font-size: 0.8em">Source code licensed under GPL v3.</p>
     <p style="color: grey; font-size: 0.8em">© 2018 ZENG Chen.</p>
 
     <wux-tabbar controlled :current="tabIndex" position="bottom" theme="positive">
@@ -43,8 +40,8 @@ export default {
     tabIndex () {
       return store.state.tabIndex
     },
-    recCount () {
-      return store.state.dataArray.length
+    recData () {
+      return store.state.dataArray
     }
   },
   methods: {

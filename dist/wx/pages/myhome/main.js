@@ -113,9 +113,6 @@ if (false) {(function () {
 //
 //
 //
-//
-//
-//
 
 // Use Vuex
 
@@ -129,8 +126,8 @@ if (false) {(function () {
     tabIndex: function tabIndex() {
       return __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].state.tabIndex;
     },
-    recCount: function recCount() {
-      return __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].state.dataArray.length;
+    recData: function recData() {
+      return __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].state.dataArray;
     }
   },
   methods: {
@@ -185,7 +182,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticStyle: {
       "font-size": "1.4em"
     }
-  }, [_vm._v("SmartREC")]), _vm._v(" "), _c('h2', [_vm._v("v1.0.0")]), _vm._v(" "), _c('wux-white-space', {
+  }, [_vm._v("SmartREC")]), _vm._v(" "), _c('h2', [_vm._v("v1.0.1")]), _vm._v(" "), _c('wux-white-space', {
     attrs: {
       "body-style": "height: 70px",
       "mpcomid": '1'
@@ -198,7 +195,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticStyle: {
       "font-size": "1em"
     }
-  }, [_vm._v("您已经使用SmartREC进行了" + _vm._s(_vm.recCount) + "次录音")]), _vm._v(" "), _c('wux-white-space', {
+  }, [_vm._v("您已经使用SmartREC进行了" + _vm._s(_vm.recData.length) + "次录音")]), _vm._v(" "), _c('wux-white-space', {
     attrs: {
       "body-style": "height: 70px",
       "mpcomid": '2'
@@ -208,7 +205,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "color": "grey",
       "font-size": "0.8em"
     }
-  }, [_vm._v("Source code licensed GPL v3.")]), _vm._v(" "), _c('p', {
+  }, [_vm._v("Source code licensed under GPL v3.")]), _vm._v(" "), _c('p', {
     staticStyle: {
       "color": "grey",
       "font-size": "0.8em"
