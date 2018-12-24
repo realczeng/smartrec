@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/logo.png" style="align: center"/>
+<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/logo.png" align="center" />
 
 # SmartREC
 
@@ -23,10 +23,10 @@ SmartREC(/smɑrtrek/)是一款运行于微信小程序平台上的智能录音�
 
 [演示视频](https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/screenrec.mp4)
 
-<p style="text-align: center">
-<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/index.png" style="width: 25%"/>
-<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/list.png" style="width: 25%" />
-<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/about.png" style="width: 25%" />
+<p align="center">
+<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/index.png" width="25%"/>
+<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/list.png" width="25%" />
+<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/about.png" width="25%" />
 </p>
 
 ## 如何运行
