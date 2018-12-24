@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/logo.png" align="center" />
+<p align="center"><img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/logo.png" /></p>
 
 # SmartREC
 
