@@ -62,8 +62,10 @@
 </template>
 
 <script>
-import card from '@/components/card'
 import store from '@/store'
+
+var Fly = require('flyio/dist/npm/wx')
+let fly = new Fly()
 
 var plugin = requirePlugin('WechatSI')
 let manager = plugin.getRecordRecognitionManager()
@@ -120,10 +122,6 @@ export default {
       let remainingSec = this.recTime % 60
       return (min < 10 ? '0' : '') + min + ':' + (remainingSec < 10 ? '0' : '') + remainingSec
     }
-  },
-
-  components: {
-    card
   },
 
   methods: {
@@ -223,18 +221,15 @@ export default {
       success (res) {
         self.latitude = res.latitude
         self.longitude = res.longitude
-        wx.request({
-          url: 'https://free-api.heweather.net/s6/weather/now',
-          data: {
-            location: self.latitude + ',' + self.longitude,
-            key: '278135eb399f4b06a4362778c6096713'
-          },
-          success: function (res) {
+        fly.get('https://free-api.heweather.net/s6/weather/now', {
+          location: self.latitude + ',' + self.longitude,
+          key: '278135eb399f4b06a4362778c6096713'
+        })
+          .then(function (res) {
             self.srcTime = res.data.HeWeather6[0].update.loc
             self.srcWeather = res.data.HeWeather6[0].now.cond_txt
             self.dayH1 = self.srcTime
-          }
-        })
+          })
       }
     })
   }

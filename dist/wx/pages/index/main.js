@@ -88,8 +88,7 @@ if (false) {(function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_card__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__store__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store__ = __webpack_require__(2);
 //
 //
 //
@@ -156,6 +155,8 @@ if (false) {(function () {
 
 
 
+var Fly = __webpack_require__(43);
+var fly = new Fly();
 
 var plugin = requirePlugin('WechatSI');
 var manager = plugin.getRecordRecognitionManager();
@@ -182,10 +183,10 @@ var manager = plugin.getRecordRecognitionManager();
 
   computed: {
     tabIndex: function tabIndex() {
-      return __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.tabIndex;
+      return __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].state.tabIndex;
     },
     recData: function recData() {
-      return __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].state.dataArray;
+      return __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].state.dataArray;
     },
     micButtonColor: function micButtonColor() {
       return !this.recState ? 'default' : 'success';
@@ -215,10 +216,6 @@ var manager = plugin.getRecordRecognitionManager();
     }
   },
 
-  components: {
-    card: __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]
-  },
-
   methods: {
     bindViewTap: function bindViewTap() {
       var url = '../logs/main';
@@ -239,7 +236,7 @@ var manager = plugin.getRecordRecognitionManager();
       });
     },
     onTabChange: function onTabChange(index) {
-      __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('tabChange', index);
+      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit('tabChange', index);
       switch (index) {
         case 0:
           wx.redirectTo({ url: '/pages/list/main' });
@@ -282,7 +279,7 @@ var manager = plugin.getRecordRecognitionManager();
       var dayText = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
       var nowTime = (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
       var finalNow = now.toLocaleDateString() + ' ' + nowTime;
-      __WEBPACK_IMPORTED_MODULE_1__store__["a" /* default */].commit('addElement', {
+      __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */].commit('addElement', {
         time: finalNow,
         day: dayText[day],
         text: this.recoText,
@@ -319,17 +316,13 @@ var manager = plugin.getRecordRecognitionManager();
       success: function success(res) {
         self.latitude = res.latitude;
         self.longitude = res.longitude;
-        wx.request({
-          url: 'https://free-api.heweather.net/s6/weather/now',
-          data: {
-            location: self.latitude + ',' + self.longitude,
-            key: '278135eb399f4b06a4362778c6096713'
-          },
-          success: function success(res) {
-            self.srcTime = res.data.HeWeather6[0].update.loc;
-            self.srcWeather = res.data.HeWeather6[0].now.cond_txt;
-            self.dayH1 = self.srcTime;
-          }
+        fly.get('https://free-api.heweather.net/s6/weather/now', {
+          location: self.latitude + ',' + self.longitude,
+          key: '278135eb399f4b06a4362778c6096713'
+        }).then(function (res) {
+          self.srcTime = res.data.HeWeather6[0].update.loc;
+          self.srcWeather = res.data.HeWeather6[0].now.cond_txt;
+          self.dayH1 = self.srcTime;
         });
       }
     });
