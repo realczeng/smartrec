@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/logo.png" width="50%"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/logo.png" /></p>
 
 # SmartREC
 
@@ -7,7 +7,7 @@
 SmartREC(/smɑrtrek/)是一款运行于微信小程序平台上的智能录音机，支持实时语音识别，并且可以将识别数据同时间、天气信息一起保存。
 
 扫码使用：
-<p align="center"><img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/qrcode.png" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/zengchencn/smartrec/master/assets/qrcode.jpg" width="20%"/></p>
 
 ## 特性
 
